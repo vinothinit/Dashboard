@@ -29,7 +29,7 @@
 
 
         function getMap(data) {
-           /* var data =[ {
+            var data =[ {
                 code: "SE",
                 z: 9380
             }, {
@@ -53,12 +53,12 @@
             }, {
                 code: "TG",
                 z: 6028
-            }];*/
+            }];
 
-            var data = data.studies[2].site_locations;
+           /* var data = data.studies[2].site_locations;
             for (code in data){
                 alert(code)
-            }
+            }*/
 
             var mapData = Highcharts.geojson(Highcharts.maps['custom/world']);
 
