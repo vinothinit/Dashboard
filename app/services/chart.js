@@ -34,9 +34,11 @@
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='1'){
-                                        return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                    }else if(this.point.name=='2'){
+                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
                                     }else{
-                                        return '<img src="http://highcharts.com/demo/gfx/sund.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
                                     }
                                 },
                                 useHTML: true
