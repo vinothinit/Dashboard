@@ -1,0 +1,121 @@
+
+	<section class="wrapper pb20 pt20">
+		<div id="divcont" data-ng-controller="dashboardController as chart" ng-cloak>
+		<div class="col-md-12 f_cnt_top_outer pt20 nopadding">
+			<div class="col-md-12 f_content_top">
+				<div class="col-md-3">
+					<h3 class="">SPONSORS</h3>
+					<hr class="title_hr">&nbsp;</hr>
+					<div class="values_large">{{chart.dashboard.sponsor_total}}</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-12 f_cnt_center">
+						<h3 class="text-center">TOTAL PARTICIPANTS WORLDWIDE</h3>
+						<hr class="title_hr">&nbsp;</hr>
+						<div class="values_large">{{chart.dashboard.participant_total}}</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h3 class="">STUDIES</h3>
+					<hr class="title_hr">&nbsp;</hr>
+					<div class="values_large">{{chart.dashboard.study_total}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">&nbsp;</div>
+		<div class="col-md-12">&nbsp;</div>
+		<div class="col-md-12 f_cnt_mid_top pb20">
+			<div class="col-md-4">
+				<h4>
+					<span class="img_logo"><img src="content/images/{{chart.dashboard.sponsors.pfi.logo_image}}" /></span><br>
+					<span>{{chart.dashboard.studies[0].external_name}}</span><br>
+					<hr class="title_hr">&nbsp;</hr>
+				</h4>
+				<div class="col-md-12 pie_chart nopadding">
+					<highchart id="chart-pfizer" config="chart.pfizer"></highchart>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4>
+					<span class="img_logo"><img src="content/images/{{chart.dashboard.sponsors.lly.logo_image}}" /></span><br>
+					<span>{{chart.dashboard.studies[1].external_name}}</span><br>
+					<hr class="title_hr">&nbsp;</hr>
+				</h4>
+				<div class="col-md-12 pie_chart nopadding">
+					<highchart id="chart2" config="chart.llyChart"></highchart>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4>
+					<span class="img_logo"><img src="content/images/{{chart.dashboard.sponsors.gsk.logo_image}}" /></span><br>
+					<span>{{chart.dashboard.studies[2].external_name}}</span><br>
+					<hr class="title_hr">&nbsp;</hr>
+				</h4>
+				<div class="col-md-12 pie_chart nopadding">
+					<highchart id="chart3" config="chart.gskChart"></highchart>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">&nbsp;</div>
+		<div class="col-md-12 map_content nopadding">
+			<h2 class="col-md-12 page_block_title"><i class="fa fa-circle"></i> STUDY SITES</h2>
+			<hr class="title_hr">&nbsp;</hr>
+			<h4 class="col-md-12 mt0 mb0 pt15 pb15">COUNTRIES INTRODUCED TO ENROLL</h4>
+			<div class="col-md-12 nopadding">
+				<!--<img src="content/images/map.png" alt="Map"/>-->
+				<div id="container" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
+			</div>
+		</div>
+		
+		<div class="col-md-12">&nbsp;</div>
+		
+		<div class="col-md-12 graph_time_knowledge nopadding">
+			<div class="col-md-12 pb15 pt15">
+				<div class="col-md-2 day_text text-center">
+					<img src="content/images/days_count.png" alt="days" /></br>
+					<span class="col-md-12 mt10 nopadding">32 DAYS LEFT</span>
+				</div>
+				<div class="col-md-7 glaxo_ttl">
+					<span class="col-md-12 ttl_1">GlaxoSmithKline</span></br>
+					<span class="col-md-12 ttl_2">GSK Reprise</span></br>
+					<span class="col-md-12 ttl_3"><img src="content/images/flag.png" /> San Francisco, CA</span>
+				</div>
+				<div class="col-md-3 text-right">
+					<img src="content/images/gsk_large.png" />
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="col-md-12 graph_time_knowledge">
+			<div class="col-md-4">
+				<h3 class="col-md-12 inner_block_title">DEMOGRAPHICS</h3>
+				<hr class="title_hr">&nbsp;</hr>
+				<highchart config="chart.demoGraphgskChart" class="span10"></highchart>
+			</div><!--DEMOGRAPHICS Ends here-->
+			
+			<div class="col-md-4">
+				<h3 class="col-md-12 inner_block_title">TOTAL TIME</h3>
+				<hr class="title_hr">&nbsp;</hr>
+				<div class="col-md-12 pie_chart nopadding">
+					<highchart config="chart.totalTimeGsk" class="span10"></highchart>
+				</div>
+			</div><!--TOTAL TIME Ends here-->
+			
+			<div class="col-md-4">
+				<h3 class="col-md-12 inner_block_title">KNOWLEDGE REVIEW</h3>
+				<hr class="title_hr">&nbsp;</hr>
+				<div class="knowledge_image">
+					<highchart config="chart.knowledgeReview" class="span10"></highchart>
+				</div>
+			</div><!--KNOWLEDGE REVIEW Ends here-->
+		</div>
+	</div>
+</section>
+
+			<script>
+				$( document ).ready(function() {
+					$("#chart-pfizer tspan:contains('CounterSigned Total')").html("doll")
+				});
+
+			</script>

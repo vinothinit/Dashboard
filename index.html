@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="dashboard">
+
+    <head>
+        <link href="content/css/custom.css" rel="stylesheet">
+    </head>
+    <!-- third party libraries-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    <script src="http://code.highcharts.com/stock/highstock.src.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+    <!-- Load app main script -->
+    <script src="app/app.js"></script>
+    <!-- Load controllers -->
+    <script src="app/controllers/indexController.js"></script>
+    <script src="app/controllers/dashboardController.js"></script>
+
+    <!-- Load custom directives -->
+    <script src="app/directives/highcharts-ng.js"></script>
+
+    <!-- Load custom services -->
+    <script src="app/services/chart.js"></script>
+    <body id="front">
+        <header>
+            <section class="wrapper">
+                <div id="logo" class="col-md-6 pull-left nopadding">
+                    <img src="content/images/logo_white.png" />
+                </div>
+                <div class="col-md-6 front_header_right nopadding pull-right text-right">
+                    <span class="iconic_text"><i class="fa fa-circle-o-notch"></i></span>
+                    <span class="ml10">SEPTEMBER 2, 2014</span>
+                    <span class="ml10">3:15 PM PST</span>
+                </div>
+            </section>
+        </header>
+
+        <section id="front_content">
+            <div data-ng-view=""> </div>
+        </section>
+
+
+    </body>
+</html>

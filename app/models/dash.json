@@ -1,0 +1,134 @@
+{
+    "participant_total": 14541,
+    "sponsor_total": 45,
+    "study_total": 188,
+    "language_totals": [
+        { "en_US": 12 },
+        { "pt_BR": 3 },
+        { "zh_CN": 9 },
+        { "it_IT": 5 },
+        { "hi_IN": 9 }
+    ],
+    "sponsors": {
+        "gsk": {
+            "full_name": "GlaxoSmithKline",
+            "logo_image": "gsk.png"
+        },
+        "pfi": {
+            "full_name": "Pfizer",
+            "logo_image": "pfi.png"
+        },
+        "lly": {
+            "full_name": "Eli Lilly",
+            "logo_image": "lilly_logo.png"
+        }
+    },
+    "studies": [
+        {
+            "sponsor": "pfi",
+            "internal_name": "PFIZ01",
+            "external_name": "Overactive Bladder",
+            "exited_total": 10,
+            "signed_total": 23,
+            "countersigned_total": 125,
+            "site_locations": {
+                "US": {
+                    "postal_codes": [ "78205", "94102", "60602", "10007" ]
+                },
+                "IN": {
+                    "postal_codes": [ "38", "41", "71" ]
+                }
+            },
+            "chart_data": {
+                "demographics": {
+                    "0":   { "male": 1,  "female": 1 },
+                    "20":  { "male": 5,  "female": 4 },
+                    "40":  { "male": 8,  "female": 6 },
+                    "60":  { "male": 16, "female": 6 },
+                    "80":  { "male": 9,  "female": 4 },
+                    "100": { "male": 2,  "female": 3 }
+                },
+                "time": {
+                    "video": 25,
+                    "document": 32,
+                    "quiz": 78
+                },
+                "quiz": {
+                    "missed_zero": 25,
+                    "missed_one": 14,
+                    "missed_two": 4
+                }
+            }
+        },
+        {
+            "sponsor": "lly",
+            "internal_name": "LLY01",
+            "external_name": "XNAA",
+            "exited_total": 10,
+            "signed_total": 88,
+            "countersigned_total": 115,
+            "site_locations": {
+                "US": {
+                    "postal_codes": [ "78205", "94102", "60602", "10007" ]
+                },
+                "IT": {
+                    "postal_codes": [ "00120", "10156" ]
+                }
+            },
+            "chart_data": {
+                "demographics": {
+                    "0":   { "male": 1,  "female": 1 },
+                    "20":  { "male": 5,  "female": 4 },
+                    "40":  { "male": 8,  "female": 6 },
+                    "60":  { "male": 16, "female": 6 },
+                    "80":  { "male": 9,  "female": 4 },
+                    "100": { "male": 2,  "female": 3 }
+                },
+                "time": {
+                    "video": 25,
+                    "document": 32,
+                    "quiz": 78
+                },
+                "quiz": {
+                    "missed_zero": 25,
+                    "missed_one": 14,
+                    "missed_two": 4
+                }
+            }
+        },
+        {
+            "sponsor": "gsk",
+            "sponsor_code": "gsk",
+            "internal_name": "GSK01",
+            "external_name": "Macular Degeneration",
+            "exited_total": 100,
+            "signed_total": 23,
+            "countersigned_total": 25,
+            "site_locations": {
+                "US": {
+                    "postal_codes": [ "78205", "94102", "60602", "10007" ]
+                }
+            },
+            "chart_data": {
+                "demographics": {
+                    "0":   { "male": 1,  "female": 1 },
+                    "20":  { "male": 5,  "female": 4 },
+                    "40":  { "male": 8,  "female": 6 },
+                    "60":  { "male": 16, "female": 6 },
+                    "80":  { "male": 9,  "female": 4 },
+                    "100": { "male": 2,  "female": 3 }
+                },
+                "time": {
+                    "video": 25,
+                    "document": 32,
+                    "quiz": 78
+                },
+                "quiz": {
+                    "missed_zero": 25,
+                    "missed_one": 14,
+                    "missed_two": 4
+                }
+            }
+        }
+    ]
+}

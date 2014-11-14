@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+}
+a{
+	color:#236F93;
+}
+a:hover, a:focus{
+	outline:none;
+	text-decoration:none;
+}
+label{font-weight:normal;}
+.form-control{
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.form-control:focus{
+	box-shadow:none;
+}
+.input-group-addon{
+	background:none;
+	border:0;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.btn-green{
+	background:#237d94;
+	color:#fff;
+	font-size:12px;
+	text-transform:uppercase;
+	transition:all .2s ease-in-out;
+}
+.btn-green:hover{
+	color:#fff;
+}
+/*Breadcrumb Starts here*/
+.breadcrumb{
+	background:none;
+	border-radius:0 0 0 0;
+	list-style:none;
+	padding: 11px 0;
+}
+.breadcrumb li{
+	display:inline;
+}
+.breadcrumb > li + li:before{
+	color:#000;
+	content:">";
+}
+/*Breadcrumb Ends here*/
+/*Accordion Starts here*/
+.panel{background:#f9fafc;}
+.panel-group .panel{
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.panel-heading{padding:0;}
+a.accordion-toggle{
+	cursor:pointer;
+}
+.panel-heading a.accordion-toggle > div{
+	padding:10px 15px;
+}
+/*Accordion Ends here*/
