@@ -54,12 +54,17 @@
                 code: "TG",
                 z: 6028
             }];
-
-           /* var data = data.studies[2].site_locations;
-            for (code in data){
+         //  var data = data.studies[2].site_locations;
+            /*    for (code in data){
                 alert(code)
             }*/
-
+       /*     $.each(data, function(key, value) {
+                //this is each data... data[0], data[1]... etc, the value being value and the index being key.
+                $.each(key, function (innerKey, innerValue) {
+alert(innerValue)
+                });
+            });
+*/
             var mapData = Highcharts.geojson(Highcharts.maps['custom/world']);
 
             $('#container').highcharts('Map', {
