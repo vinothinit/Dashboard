@@ -34,11 +34,11 @@
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='1'){
-                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                        return '<img src="content/images/2.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
                                     }else if(this.point.name=='2'){
-                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                        return '<img src="content/images/1.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
                                     }else{
-                                       // return '<img src="http://highcharts.com/demo/gfx/sun.png" alt="" style="vertical-align: middle; width: 32px; height: 32px"/>';
+                                        return '<img src="content/images/3.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
                                     }
                                 },
                                 useHTML: true
@@ -58,7 +58,7 @@
                         ['3', countersigned_total]
                     ],
                     colors: [
-                        '#1975A3', '#45A6C5', '#32576A'
+                        'rgb(40,93,110)','rgb(2,118,170)',  'rgb(33,151,183)'
 
                     ]
                 }],
@@ -73,10 +73,10 @@
         function getDemoGraphicsChart(demographics) {
             var chart = '';
             return chart = {
-
-                title: {
+                title:{
                     text: ''
                 },
+
                 xAxis: {
                     lineColor: '#000',
                     tickColor: '#000',
@@ -102,7 +102,21 @@
                         enabled: false
                     }
                 },
+
                 options: {
+                    colors: ["rgb(19,156,211)", "rgb(181,113,175)"],
+                    legend: {
+                        useHTML:true,
+                        symbolWidth:0,
+                        verticalAlign: 'top',
+                        labelFormatter: function () {
+                             if(this.name=='Male') {
+                                return '<span><img src="content/images/men.png" width="32" height="32"/></span>';
+                            }else {
+                                return '<span><img src="content/images/women.png" width="32" height="32"/></span>';
+                            }
+                        }
+                    },
                     chart: {
                         type: 'column',
                         plotBackgroundColor: '#292d2f',
@@ -122,11 +136,13 @@
                             stacking: 'normal',
                             dataLabels: {
                                 enabled: false
+
                             }
                         }
                     }
                 },
                 series: [{
+
                     name: 'Male',
                     data: [demographics["0"].male, demographics["20"].male, demographics["40"].male, demographics["60"].male, demographics["80"].male, demographics["100"].male]
                 }, {
@@ -213,12 +229,12 @@
                 series: [{
                     type: 'pie',
                     data: [
-                        ['Video', quiz.missed_zero],
-                        ['Document', quiz.missed_one],
-                        ['Quiz', quiz.missed_two]
+                        ['', quiz.missed_zero],
+                        ['', quiz.missed_one],
+                        ['', quiz.missed_two]
                     ],
                     colors: [
-                        '#1975A3', '#45A6C5', '#32576A'
+                        'rgb(98,188,76)', 'rgb(229,62,48)', 'rgb(247,148,33)'
 
                     ]
                 }],

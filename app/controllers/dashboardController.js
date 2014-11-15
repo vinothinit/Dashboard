@@ -29,45 +29,31 @@
 
 
         function getMap(data) {
-            var data =[ {
-                code: "SE",
-                z: 9380
+           /* var data =[ {
+                code: "SE"
+
             }, {
-                code: "CH",
-                z: 7664
+                code: "CH"
+
             }, {
-                code: "SY",
-                z: 20411
+                code: "SY"
+
             }, {
-                code: "TJ",
-                z: 6879
+                code: "TJ"
+
             }, {
-                code: "TZ",
-                z: 44841
-            }, {
-                code: "TH",
-                z: 69122
-            }, {
-                code: "TL",
-                z: 1124
-            }, {
-                code: "TG",
-                z: 6028
-            }];
-         //  var data = data.studies[2].site_locations;
-            /*    for (code in data){
-                alert(code)
-            }*/
-       /*     $.each(data, function(key, value) {
-                //this is each data... data[0], data[1]... etc, the value being value and the index being key.
-                $.each(key, function (innerKey, innerValue) {
-alert(innerValue)
-                });
+                code: "TZ"
+
+            }];*/
+           var data = data.studies[2].site_locations;
+            $.each(data, function (value) {
+                this.code =value;
             });
-*/
+
             var mapData = Highcharts.geojson(Highcharts.maps['custom/world']);
 
             $('#container').highcharts('Map', {
+                colors: ["#FFFFFF"],
                 chart: {
                     borderWidth: null,
                     plotBackgroundColor: '#292d2f',
@@ -81,11 +67,28 @@ alert(innerValue)
                 title: {
                     text: ''
                 },
-
+                symbol: { // button symbol options
+                    shape: 'circle', // shape, taken from Highcharts.symbols
+                    size: 12,
+                    style: {
+                        'stroke-width':  2,
+                        'stroke': 'black',
+                        fill: 'red',
+                        zIndex: 121
+                    }
+                },
                 subtitle: {
                     text: ''
                 },
-
+                plotOptions: {
+                    series: {
+                        marker: {
+                            fillColor: 'white',
+                            lineWidth: 3,
+                            lineColor: null // inherit from series
+                        }
+                    }
+                },
                 legend: {
                     enabled: false
                 },
@@ -100,16 +103,17 @@ alert(innerValue)
                 series: [{
                     name: 'Countries',
                     mapData: mapData,
-                    nullColor: '#32576A',
-                    enableMouseTracking: false
+                    nullColor: 'rgb(40,93,110)',
+                    enableMouseTracking: false,
+                    borderColor: 'rgb(40,93,110)'
                 }, {
                     type: 'mapbubble',
                     mapData: mapData,
-                    name: 'Population 2010',
-                    joinBy: ['iso-a2', 'code'],
+                   // joinBy: ['iso-a2', 'code'],
+                    joinBy: ['iso-a3','code'],
                     data: data,
-                    minSize: 4,
-                    maxSize: '12%',
+                    minSize: 8,
+                    maxSize: 8,
                     tooltip: {
                         enable: false
                     }
