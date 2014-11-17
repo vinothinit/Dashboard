@@ -3,6 +3,9 @@
 
     <head>
         <link href="content/css/custom.css" rel="stylesheet">
+        <title>
+            Dashboard Application
+        </title>
     </head>
     <!-- third party libraries-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -31,10 +34,10 @@
                 <div id="logo" class="col-md-6 pull-left nopadding">
                     <img src="content/images/logo_white.png" />
                 </div>
-                <div class="col-md-6 front_header_right nopadding pull-right text-right">
+                <div class="col-md-6 front_header_right nopadding pull-right text-right" data-ng-controller="indexController as index">
                     <span class="iconic_text"><i class="fa fa-circle-o-notch"></i></span>
-                    <span class="ml10">SEPTEMBER 2, 2014</span>
-                    <span class="ml10">3:15 PM PST</span>
+                    <span class="ml10">{{index.date | date:'longDate'}}</span>
+                    <span class="ml10">{{index.date | date: 'h:mm a' :'UTC'}}</span>
                 </div>
             </section>
         </header>
