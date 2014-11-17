@@ -107,6 +107,9 @@
             "site_locations": {
                 "US": {
                     "postal_codes": [ "78205", "94102", "60602", "10007" ]
+                },
+                "IN": {
+                    "postal_codes": [ "38", "41", "71" ]
                 }
             },
             "chart_data": {
