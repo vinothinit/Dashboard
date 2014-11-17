@@ -29,16 +29,17 @@
                     plotOptions: {
                         pie: {
                             borderWidth: 0,
+                            size: 200,
                             dataLabels: {
                                 enabled: true,
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='1'){
-                                        return '<img src="content/images/2.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/2.png" alt="" style="margin-top: 11px; margin-left: -20px; middle; width: 22px; height: 22px margin-top: 11px;"/>';
                                     }else if(this.point.name=='2'){
-                                        return '<img src="content/images/1.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/1.png" alt="" style="margin-top: 11px; margin-left: -20px; width: 22px; height: 22px"/>';
                                     }else{
-                                        return '<img src="content/images/3.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/3.png" alt="" style="margin-top: 11px; margin-left: -20px; width: 22px; height: 22px"/>';
                                     }
                                 },
                                 useHTML: true
@@ -85,6 +86,12 @@
                     categories: ['0', '20', '40', '60', '80', '100'],
                     title: {
                         text: 'Age'
+                    },
+                    labels: {
+                        style: {
+                            fontSize: '12px',
+                            fontWeight: 'bold'
+                        }
                     }
                 },
                 yAxis: {
@@ -98,11 +105,16 @@
                     title: {
                         text: 'Number of Patients'
                     },
+                    labels: {
+                        style: {
+                            fontSize: '12px',
+                            fontWeight: 'bold'
+                        }
+                    },
                     stackLabels: {
                         enabled: false
                     }
                 },
-
                 options: {
                     colors: ["rgb(19,156,211)", "rgb(181,113,175)"],
                     legend: {
@@ -122,7 +134,16 @@
                         plotBackgroundColor: '#292d2f',
                         plotBorderWidth: null,
                         plotShadow: false,
-                        backgroundColor: '#292d2f'
+                        backgroundColor: '#292d2f',
+                        // Edit chart spacing
+                        spacingBottom: 15,
+                        spacingTop: 10,
+                        spacingLeft: 10,
+                        spacingRight: 10,
+
+                        // Explicitly tell the width and height of a chart
+                        width: null,
+                        height: null
                     },
                     tooltip: {
                         formatter: function () {
@@ -142,12 +163,13 @@
                     }
                 },
                 series: [{
-
                     name: 'Male',
-                    data: [demographics["0"].male, demographics["20"].male, demographics["40"].male, demographics["60"].male, demographics["80"].male, demographics["100"].male]
+                    data: [demographics["0"].male, demographics["20"].male, demographics["40"].male, demographics["60"].male, demographics["80"].male, demographics["100"].male],
+                    borderWidth:0
                 }, {
                     name: 'Female',
-                    data: [demographics["0"].female, demographics["20"].female, demographics["40"].female, demographics["60"].female, demographics["80"].female, demographics["100"].female]
+                    data: [demographics["0"].female, demographics["20"].female, demographics["40"].female, demographics["60"].female, demographics["80"].female, demographics["100"].female],
+                    borderWidth:0
                 }
                 ],
                 loading: false,
@@ -171,9 +193,21 @@
                     },
                     plotOptions: {
                         pie: {
+                            size: 200,
                             borderWidth: 0,
                             dataLabels: {
-                                enabled: false
+                                enabled: true,
+                                connectorColor: '#292d2f',
+                                formatter: function() {
+                                    if(this.point.name=='Video'){
+                                        return '<img src="content/images/tabl1.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
+                                    }else if(this.point.name=='Document'){
+                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -36px; width: 22px; height: 22px"/>';
+                                    }else{
+                                        return '<img src="content/images/tabl3.png" alt="" style=" margin-left: 69px; margin-right: -20px; width: 22px; height: 22px"/>';
+                                    }
+                                },
+                                useHTML: true
                             }
                         }
                     },
@@ -215,15 +249,22 @@
                     },
                     plotOptions: {
                         pie: {
+                            size:200,
                             borderWidth: 0,
+                            innerSize: '50%',
                             dataLabels: {
                                 enabled: false
-                            },
-                            innerSize: '60%'
+                            }
                         }
                     },
+
                     title: {
-                        text: ''
+                        enabled: true,
+                        useHTML: true,
+                        text: '<img src="content/images/table.png" style="width: 42px; height: 59px;  margin-top: -9px;">',
+                        align: 'center',
+                        verticalAlign: 'middle',
+                        y: 0
                     }
                 },
                 series: [{
