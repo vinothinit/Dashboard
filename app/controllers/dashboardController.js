@@ -28,8 +28,8 @@
         });
 
 
-        function getMap(data) {
-           /* var data =[ {
+        function getMap(datas) {
+            /*var data =[ {
                 code: "SE"
 
             }, {
@@ -42,14 +42,15 @@
                 code: "TJ"
 
             }, {
-                code: "TZ"
+                code: "IN"
 
             }];*/
-           var data = data.studies[2].site_locations;
-            $.each(data, function (value) {
-                this.code =value;
+            var data = [];
+            $.each(datas.studies[2].site_locations, function (value) {
+                data.push({
+                    code: value
+                });
             });
-
             var mapData = Highcharts.geojson(Highcharts.maps['custom/world']);
 
             $('#container').highcharts('Map', {
@@ -109,8 +110,7 @@
                 }, {
                     type: 'mapbubble',
                     mapData: mapData,
-                   // joinBy: ['iso-a2', 'code'],
-                    joinBy: ['iso-a3','code'],
+                    joinBy: ['iso-a2', 'code'],
                     data: data,
                     minSize: 8,
                     maxSize: 8,
