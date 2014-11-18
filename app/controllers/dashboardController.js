@@ -38,22 +38,6 @@
         }
 
         function getMap(datas) {
-            /*var data =[ {
-                code: "SE"
-
-            }, {
-                code: "CH"
-
-            }, {
-                code: "SY"
-
-            }, {
-                code: "TJ"
-
-            }, {
-                code: "IN"
-
-            }];*/
             var data = [];
             $.each(datas.studies[2].site_locations, function (value) {
                 data.push({
@@ -97,6 +81,12 @@
                             lineWidth: 3,
                             lineColor: null // inherit from series
                         }
+                    }
+                },
+                tooltip: {
+                    formatter: function () {
+                        return '<b>' +
+                            this.point.name +"<b>";
                     }
                 },
                 legend: {

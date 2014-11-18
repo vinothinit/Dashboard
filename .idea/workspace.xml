@@ -44,31 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboardController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboardController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/dashboardController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dash.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/dash.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.442307" vertical-offset="0" max-vertical-offset="2414">
-              <caret line="35" column="62" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94498384" vertical-offset="8426" max-vertical-offset="9129">
-              <caret line="530" column="1" selection-start-line="530" selection-start-column="1" selection-end-line="530" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.36528927" vertical-offset="1258" max-vertical-offset="2227">
+              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -78,17 +58,17 @@
         <entry file="file://$PROJECT_DIR$/app/services/chart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.1923075" vertical-offset="2499" max-vertical-offset="5355">
-              <caret line="158" column="34" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="34" />
+              <caret line="158" column="39" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="39" />
               <folding>
-                <marker date="1416316878659" expanded="true" signature="1438:1485" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="1664:1730" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="1873:1936" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="4998:5036" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="5196:5233" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="8243:8296" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="8475:8520" placeholder="..." />
-                <marker date="1416316878659" expanded="true" signature="8667:8729" placeholder="..." />
-                <marker date="1416316878659" expanded="false" signature="10928:10973" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="1438:1485" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="1664:1730" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="1873:1936" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="4998:5036" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="5196:5233" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="8248:8301" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="8480:8525" placeholder="..." />
+                <marker date="1416317353918" expanded="true" signature="8672:8734" placeholder="..." />
+                <marker date="1416317353918" expanded="false" signature="10933:10978" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -351,15 +331,15 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1996" max-vertical-offset="5032">
           <caret line="138" column="41" selection-start-line="138" selection-start-column="39" selection-end-line="138" selection-end-column="41" />
           <folding>
-            <marker date="1416316878659" expanded="true" signature="1438:1485" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="1664:1730" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="1873:1936" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="4998:5036" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="5196:5233" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8243:8296" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8475:8520" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8667:8729" placeholder="..." />
-            <marker date="1416316878659" expanded="false" signature="10928:10973" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="1438:1485" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="1664:1730" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="1873:1936" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="4998:5036" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="5196:5233" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8248:8301" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8480:8525" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8672:8734" placeholder="..." />
+            <marker date="1416317353918" expanded="false" signature="10933:10978" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -553,22 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/dash.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.442307" vertical-offset="0" max-vertical-offset="2414">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/dashboardController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077" vertical-offset="306" max-vertical-offset="952">
@@ -585,21 +549,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/chart.js">
+    <entry file="file://$PROJECT_DIR$/app/models/dash.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="2499" max-vertical-offset="5355">
-          <caret line="158" column="34" selection-start-line="158" selection-start-column="34" selection-end-line="158" selection-end-column="34" />
-          <folding>
-            <marker date="1416316878659" expanded="true" signature="1438:1485" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="1664:1730" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="1873:1936" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="4998:5036" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="5196:5233" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8243:8296" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8475:8520" placeholder="..." />
-            <marker date="1416316878659" expanded="true" signature="8667:8729" placeholder="..." />
-            <marker date="1416316878659" expanded="false" signature="10928:10973" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="1.0512367" vertical-offset="0" max-vertical-offset="2414">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,6 +561,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.94498384" vertical-offset="8426" max-vertical-offset="9129">
           <caret line="530" column="1" selection-start-line="530" selection-start-column="1" selection-end-line="530" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="2499" max-vertical-offset="5355">
+          <caret line="158" column="39" selection-start-line="158" selection-start-column="35" selection-end-line="158" selection-end-column="39" />
+          <folding>
+            <marker date="1416317353918" expanded="true" signature="1438:1485" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="1664:1730" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="1873:1936" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="4998:5036" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="5196:5233" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8248:8301" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8480:8525" placeholder="..." />
+            <marker date="1416317353918" expanded="true" signature="8672:8734" placeholder="..." />
+            <marker date="1416317353918" expanded="false" signature="10933:10978" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/dashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36528927" vertical-offset="1258" max-vertical-offset="2227">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
           <folding />
         </state>
       </provider>
