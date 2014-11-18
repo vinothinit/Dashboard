@@ -398,13 +398,12 @@ footer p{
 	font-size:20px;
 	font-weight:normal;
 }
-.map_content h4{
-	background:#242626;
-	color:#A7A9AC;
-	font-family:open_sansbold;
-	font-size:12px;
-	font-weight:normal;
-}
+ .map_content h4 {
+	 background: none repeat scroll 0 0 #242626;
+	 font-family: open_sansregular;
+	 font-size: 12px;
+	 font-weight: bolder;
+ }
 .highcharts-button {
 	display:none;
 }
@@ -526,6 +525,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	text-transform: uppercase;
 }
 .no_participant {
-	color: #595b67;
-	margin-left: 73px;
-}
+	 color: #595b67;
+	 letter-spacing: 0;
+	 margin-left: 73px;
+ }
+
+.logo_des.ng-binding {
+	 font-size: 10pt;
+	 letter-spacing: 0;
+ }
