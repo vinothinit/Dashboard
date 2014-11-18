@@ -20,6 +20,8 @@
                 options: {
                     chart: {
                         type: 'pie',
+                        height:300,
+                        marginTop:-35,
                         plotBackgroundColor: '#292d2f',
                         plotBorderWidth: null,
                         plotShadow: false,
@@ -34,9 +36,9 @@
                                 enabled: true,
                                 connectorColor: '#292d2f',
                                 formatter: function() {
-                                    if(this.point.name=='1'){
+                                    if(this.point.name=='Exited Total'){
                                         return '<img src="content/images/2.png" alt="" align="right" style=" margin-left: -38px; width: 22px; height: 22px;"/>';
-                                    }else if(this.point.name=='2'){
+                                    }else if(this.point.name=='Signed Total'){
                                         return '<img src="content/images/1.png" alt="" style="width: 22px; height: 22px; ;position:absolute; margin-left: -21px;"/>';
                                     }else{
                                         return '<img src="content/images/3.png" alt="" style=" width: 22px; height: 22px; margin-left: 2px;position:absolute;"/>';
@@ -47,6 +49,11 @@
 
                         }
                     },
+                    tooltip: {
+                        formatter: function () {
+                            return this.point.name + ': ' + this.y + '<br/>';;
+                        }
+                    },
                     title: {
                         text: ''
                     }
@@ -54,9 +61,9 @@
                 series: [{
                     type: 'pie',
                     data: [
-                        ['2', signed_total],
-                        ['1', exited_total],
-                        ['3', countersigned_total]
+                        ['Signed Total', signed_total],
+                        ['Exited Total', exited_total],
+                        ['Countersigned Total', countersigned_total]
                     ],
                     colors: [
                         'rgb(40,93,110)','rgb(2,118,170)',  'rgb(33,151,183)'
@@ -202,15 +209,20 @@
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='Video'){
-                                        return '<img src="content/images/tabl1.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
                                     }else if(this.point.name=='Document'){
-                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/tabl1.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
                                     }else{
                                         return '<img src="content/images/tabl3.png" alt="" style=" margin-left:6px; width: 22px; height: 22px;position:absolute;"/>';
                                     }
                                 },
                                 useHTML: true
                             }
+                        }
+                    },
+                    tooltip: {
+                        formatter: function () {
+                            return this.point.name + ': ' + this.y + '<br/>';;
                         }
                     },
                     title: {
@@ -259,7 +271,11 @@
                             }
                         }
                     },
-
+                    tooltip: {
+                        formatter: function () {
+                            return this.point.name + ': ' + this.y + '<br/>';;
+                        }
+                    },
                     title: {
                         enabled: true,
                         useHTML: true,
@@ -269,12 +285,13 @@
                         y: 0
                     }
                 },
+
                 series: [{
                     type: 'pie',
                     data: [
-                        ['', quiz.missed_zero],
-                        ['', quiz.missed_one],
-                        ['', quiz.missed_two]
+                        ['Missed Zero', quiz.missed_zero],
+                        ['Missed One', quiz.missed_one],
+                        ['Missed Two', quiz.missed_two]
                     ],
                     colors: [
                         'rgb(98,188,76)', 'rgb(229,62,48)', 'rgb(247,148,33)'

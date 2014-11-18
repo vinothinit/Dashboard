@@ -18,7 +18,9 @@
             dash.demoGraphgskChart = chart.getDemoGraphicsChart(data.studies[2].chart_data.demographics);
             dash.totalTimeGsk = chart.totalTimeGsk(data.studies[2].chart_data.time);
             dash.knowledgeReview = chart.knowledgeReview(data.studies[2].chart_data.quiz);
-
+            dash.pfizerParticipants = getTotalParticipant(data.studies[0].exited_total, data.studies[0].signed_total, data.studies[0].countersigned_total);
+            dash.llyParticipants = getTotalParticipant(data.studies[1].exited_total, data.studies[1].signed_total, data.studies[1].countersigned_total);
+            dash.gskParticipants = getTotalParticipant(data.studies[2].exited_total, data.studies[2].signed_total, data.studies[2].countersigned_total);
             getMap(data);
 
 
@@ -26,7 +28,14 @@
             // log error
             alert("Json not found")
         });
-
+        //sum of total Participants
+        function getTotalParticipant(){
+            var i, sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
 
         function getMap(datas) {
             /*var data =[ {

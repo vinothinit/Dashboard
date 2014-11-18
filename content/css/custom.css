@@ -518,3 +518,10 @@ footer p{
 	border-bottom-right-radius: 10px;
 	margin-bottom: 29px;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+				 font-family: open_sansbold;
+			 }
+.ml10 {
+	font-family: open_sansbold;
+	text-transform: uppercase;
+}
