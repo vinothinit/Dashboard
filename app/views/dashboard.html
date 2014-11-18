@@ -12,7 +12,7 @@
 					<div class="col-md-12 f_cnt_center">
 						<h3 class="text-center">TOTAL PARTICIPANTS WORLDWIDE</h3>
 						<hr class="title_hr">&nbsp;</hr>
-						<div class="values_large">{{chart.dashboard.participant_total}}</div>
+						<div class="values_large">{{chart.dashboard.participant_total | number:0}}</div>
 					</div>
 				</div>
 				<div class="col-md-3">
@@ -34,7 +34,7 @@
 				<div class="col-md-12 pie_chart nopadding">
 					<highchart id="chart-pfizer" config="chart.pfizer"></highchart>
 				</div>
-				<span class="no_participant">{{chart.pfizerParticipants}} Participants</span>
+				<span class="no_participant">{{chart.pfizerParticipants | number:0}} Participants</span>
 			</div>
 			<div class="col-md-4">
 				<h4>
@@ -45,7 +45,7 @@
 				<div class="col-md-12 pie_chart nopadding">
 					<highchart id="chart2" config="chart.llyChart"></highchart>
 				</div>
-				<span class="no_participant">{{chart.llyParticipants}} Participants</span>
+				<span class="no_participant">{{chart.llyParticipants | number:0}} Participants</span>
 			</div>
 			<div class="col-md-4">
 				<h4>
@@ -56,7 +56,7 @@
 				<div class="col-md-12 pie_chart nopadding">
 					<highchart id="chart3" config="chart.gskChart"></highchart>
 				</div>
-				<span class="no_participant">{{chart.gskParticipants}} Participants</span>
+				<span class="no_participant">{{chart.gskParticipants | number:0}} Participants</span>
 			</div>
 		</div>
 		<div class="col-md-12">&nbsp;</div>
