@@ -156,7 +156,7 @@
                     },
                     tooltip: {
                         formatter: function () {
-                            return '<b>' + this.x + '</b><br/>' +
+                            return
                                 this.series.name + ': ' + this.y + '<br/>' +
                                 'Total: ' + this.point.stackTotal;
                         }
