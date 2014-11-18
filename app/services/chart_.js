@@ -35,11 +35,11 @@
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='1'){
-                                        return '<img src="content/images/2.png" alt="" align="right" style=" margin-left: -38px; width: 22px; height: 22px;"/>';
+                                        return '<img src="content/images/2.png" alt="" style="margin-top: 11px; margin-left: -20px; middle; width: 22px; height: 22px margin-top: 11px;"/>';
                                     }else if(this.point.name=='2'){
-                                        return '<img src="content/images/1.png" alt="" style="width: 22px; height: 22px; ;position:absolute; margin-left: -21px;"/>';
+                                        return '<img src="content/images/1.png" alt="" style="margin-top: 11px; margin-left: -20px; width: 22px; height: 22px"/>';
                                     }else{
-                                        return '<img src="content/images/3.png" alt="" style=" width: 22px; height: 22px; margin-left: 2px;position:absolute;"/>';
+                                        return '<img src="content/images/3.png" alt="" style="margin-top: 11px; margin-left: -20px; width: 22px; height: 22px"/>';
                                     }
                                 },
                                 useHTML: true
@@ -54,8 +54,8 @@
                 series: [{
                     type: 'pie',
                     data: [
-                        ['2', signed_total],
                         ['1', exited_total],
+                        ['2', signed_total],
                         ['3', countersigned_total]
                     ],
                     colors: [
@@ -125,9 +125,9 @@
                         verticalAlign: 'top',
                         labelFormatter: function () {
                              if(this.name=='Male') {
-                                return '<span><img src="content/images/men.png" width="32" height="32" style=" position:absolute; margin-left:112px;"/></span>';
+                                return '<span><img src="content/images/men.png" width="32" height="32"/></span>';
                             }else {
-                                return '<span><img src="content/images/girl.png" width="32" height="32" style=" position:absolute; margin-left:54px;"/></span>';
+                                return '<span><img src="content/images/women.png" width="32" height="32"/></span>';
                             }
                         }
                     },
@@ -204,9 +204,9 @@
                                     if(this.point.name=='Video'){
                                         return '<img src="content/images/tabl1.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
                                     }else if(this.point.name=='Document'){
-                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -36px; width: 20px; height: 15px"/>';
                                     }else{
-                                        return '<img src="content/images/tabl3.png" alt="" style=" margin-left:6px; width: 22px; height: 22px;position:absolute;"/>';
+                                        return '<img src="content/images/tabl3.png" alt="" style=" margin-left: 70px; margin-right: -20px; width: 19px; height: 21px"/>';
                                     }
                                 },
                                 useHTML: true

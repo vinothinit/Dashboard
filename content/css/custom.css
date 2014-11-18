@@ -414,7 +414,6 @@ footer p{
 }
 .graph_time_knowledge{
 	background:#292D2F;
-	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	color:#d8d7d0;
@@ -507,4 +506,15 @@ footer p{
 }
 .f1_hori {
 	border-right: 3px solid #595b67;
+}
+.col-md-12.bord_hr.graph_time_knowledge.nopadding {
+	border-bottom: 3px solid #50525c;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.col-md-12.hr_pad.graph_time_knowledge {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 29px;
 }
