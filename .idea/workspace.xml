@@ -77,8 +77,8 @@
       <file leaf-file-name="chart.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.416529" vertical-offset="2397" max-vertical-offset="5338">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.4214876" vertical-offset="2550" max-vertical-offset="5338">
+              <caret line="165" column="41" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
               <folding>
                 <marker date="1416400591793" expanded="false" signature="1399:1446" placeholder="..." />
                 <marker date="1416400591793" expanded="false" signature="1625:1691" placeholder="..." />
@@ -807,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.416529" vertical-offset="2397" max-vertical-offset="5338">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.4214876" vertical-offset="2550" max-vertical-offset="5338">
+          <caret line="165" column="41" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
           <folding>
             <marker date="1416400591793" expanded="false" signature="1399:1446" placeholder="..." />
             <marker date="1416400591793" expanded="false" signature="1625:1691" placeholder="..." />
