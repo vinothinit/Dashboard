@@ -28,7 +28,7 @@
                 // for each word - get the first letter
                 abbr += parts[i].charAt(0).toUpperCase();
             }
-            return abbr;
+            return timezone;
         }
 
             index.timezone = GetTimezoneShort();
