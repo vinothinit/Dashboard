@@ -6,9 +6,9 @@
     function indexCtrl( $http,chart) {
 
             var index = this;
-            index.date =  moment().format('MMMM Do YYYY, h:mm:ss a');
+            index.date =  moment().format('LLL');
 
-        
+
     }
 
 })();
