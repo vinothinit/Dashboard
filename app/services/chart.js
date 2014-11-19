@@ -20,8 +20,7 @@
                 options: {
                     chart: {
                         type: 'pie',
-                        height:300,
-                        marginTop:-35,
+                        height:340,
                         plotBackgroundColor: '#292d2f',
                         plotBorderWidth: null,
                         plotShadow: false,
@@ -156,7 +155,7 @@
                     },
                     tooltip: {
                         formatter: function () {
-                            return '' +
+                            return '<b>' + this.x + '</b><br/>' +
                                 this.series.name + ': ' + this.y + '<br/>' +
                                 'Total: ' + this.point.stackTotal;
                         }
@@ -209,11 +208,11 @@
                                 connectorColor: '#292d2f',
                                 formatter: function() {
                                     if(this.point.name=='Video'){
-                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -20px; middle; width: 22px; height: 22px"/>';
+                                        return '<img src="content/images/tabl2.png" alt="" style="margin-left: -20px; middle; width: 17px; height: 11px"/>';
                                     }else if(this.point.name=='Document'){
                                         return '<img src="content/images/tabl1.png" alt="" style="margin-left: -20px; width: 22px; height: 22px"/>';
                                     }else{
-                                        return '<img src="content/images/tabl3.png" alt="" style=" margin-left:6px; width: 22px; height: 22px;position:absolute;"/>';
+                                        return '<img src="content/images/tabl3.png" alt="" style=" margin-left:6px; width: 13px; height: 17px;position:absolute;"/>';
                                     }
                                 },
                                 useHTML: true
