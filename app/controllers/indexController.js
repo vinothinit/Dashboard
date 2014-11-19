@@ -8,30 +8,30 @@
             var index = this;
             index.date =  new Date();
 
-        function GetTimezoneShort(now) { //now is expected as a Date object
-            if(now==null)
-                return '';
-            var str = now.toString();
-            // Split on the first ( character
-            var s = str.split("(");
-            if (s.length == 2)
+        function GetTimezoneShort() { //now is expected as a Date object
+            
+
+            var d= new Date();
+            var offs= d.getTimezoneOffset();
+            var str= offs> 0? '+': '';
+            str+= offs%60? offs+' minutes, ': (offs/60)+' hours, ';
+            var s= d.toString();
+            var tz= /(\: *\d{2} *)([a-z]+)([\-\+]\d+)? *\(?([a-z ]+)?/i.exec(s) || [];
+            if(!tz[3]) tz[4]= tz[2];
+            if(offs==0) return tz[4] || ' GMT';
+            var timezone =  ' '+ (tz[4] ||  '');
+
+            var parts = timezone.split(" ");
+            var abbr = "";
+            for(var i = 1; i < parts.length; i++)
             {
-            // remove the ending ')'
-                var n = s[1].replace(")", "");
-                // split on words
-                var parts = n.split(" ");
-                var abbr = "";
-                for(i = 0; i < parts.length; i++)
-                {
-                    // for each word - get the first letter
-                    abbr += parts[i].charAt(0).toUpperCase();
-                }
-                return abbr;
+                // for each word - get the first letter
+                abbr += parts[i].charAt(0).toUpperCase();
             }
+            return abbr;
         }
 
-            var d=new Date();
-            index.timezone = GetTimezoneShort(d);
+            index.timezone = GetTimezoneShort();
     }
 
 })();
