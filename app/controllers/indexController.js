@@ -8,13 +8,30 @@
             var index = this;
             index.date =  new Date();
 
-        var now = new Date().toString();
-        var TZ = now.indexOf('(') > -1 ?
-            now.match(/\([^\)]+\)/)[0].match(/[A-Z]/g).join('') :
-            now.match(/[A-Z]{3,4}/)[0];
-        if (TZ == "GMT" && /(GMT\W*\d{4})/.test(now)) TZ = RegExp.$1;
+        function GetTimezoneShort(now) { //now is expected as a Date object
+            if(now==null)
+                return '';
+            var str = now.toString();
+            // Split on the first ( character
+            var s = str.split("(");
+            if (s.length == 2)
+            {
+            // remove the ending ')'
+                var n = s[1].replace(")", "");
+                // split on words
+                var parts = n.split(" ");
+                var abbr = "";
+                for(i = 0; i < parts.length; i++)
+                {
+                    // for each word - get the first letter
+                    abbr += parts[i].charAt(0).toUpperCase();
+                }
+                return abbr;
+            }
+        }
 
-        index.timezone = TZ;
+            var d=new Date();
+            index.timezone = GetTimezoneShort(d);
     }
 
 })();
