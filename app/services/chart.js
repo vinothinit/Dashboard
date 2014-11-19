@@ -131,9 +131,9 @@
                         verticalAlign: 'top',
                         labelFormatter: function () {
                              if(this.name=='Male') {
-                                return '<span><img src="content/images/men.png" width="32" height="32" style=" position:absolute; margin-left:112px;"/></span>';
+                                return '<span><img src="content/images/men.png" width="23" height="24" style=" position:absolute; margin-left:112px;"/></span>';
                             }else {
-                                return '<span><img src="content/images/girl.png" width="32" height="32" style=" position:absolute; margin-left:54px;"/></span>';
+                                return '<span><img src="content/images/girl.png" width="23" height="24" style=" position:absolute; margin-left:64px;"/></span>';
                             }
                         }
                     },
@@ -278,7 +278,7 @@
                     title: {
                         enabled: true,
                         useHTML: true,
-                        text: '<img src="content/images/table.png" style="width: 42px; height: 59px;  margin-top: -9px;">',
+                        text: '<img src="content/images/table.png" style="width: 42px; height: 56px;  margin-top: -9px;">',
                         align: 'center',
                         verticalAlign: 'middle',
                         y: 0
