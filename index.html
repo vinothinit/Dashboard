@@ -12,6 +12,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
     <script src="http://code.highcharts.com/stock/highstock.src.js"></script>
     <script src="http://code.highcharts.com/highcharts-more.js"></script>
     <script src="http://code.highcharts.com/maps/modules/map.js"></script>
@@ -37,7 +38,7 @@
                 <div class="col-md-6 front_header_right nopadding pull-right text-right" data-ng-controller="indexController as index">
                     <span class="iconic_text"><img height="21px" src="content/images/circle.png"></span>
                     <span class="ml10">{{index.date | date:'longDate'}}</span>
-                    <span class="ml10">{{index.date | date: 'h:mm a'}} {{index.timezone}}</span>
+                    <!--<span class="ml10">{{index.timezone}}</span>-->
                 </div>
             </section>
         </header>
